@@ -46,4 +46,9 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    implementation(libs.camera.core)
+    implementation(libs.camera.camera2) // これ追加しないと、実行時エラーになる
+    implementation(libs.camera.lifecycle)
+    implementation(libs.camera.view)
 }
