@@ -73,9 +73,6 @@ class MainActivity : AppCompatActivity() {
      * - バインディング生成とレイアウトセット
      * - ボタンリスナーを撮影処理に紐付け
      * - 権限があればCameraX起動、なければ権限リクエスト
-     */
-    /**
-     * 画面初期化とリスナー登録を行い、権限状態に応じてCameraX起動または権限リクエストを開始する。
      *
      * ```
      * // Activity起動時に自動的に呼ばれる
@@ -182,7 +179,7 @@ class MainActivity : AppCompatActivity() {
         if (captureUseCase == null) {
             Snackbar.make(
                 binding.root,
-                "必要な権限を許可してください",
+                "カメラの準備ができていません",
                 Snackbar.LENGTH_SHORT
             ).show()
             return
