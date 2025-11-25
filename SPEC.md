@@ -3,6 +3,7 @@
  撮影した写真をスマホに保存できる
 
 # アーキテクチャ
+- アプリ内で権限処理を行う場合は、`androidx.activity.result.contract.ActivityResultContracts.RequestPermission`を利用すること
 - カメラ実装にはcameraXライブラリを利用する
 - 画面はAndroid View Systemを採用する
 - ViewModelは利用しない
